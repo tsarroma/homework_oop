@@ -1,8 +1,9 @@
 from src.Rectangle import Rectangle
 
+
 class Square(Rectangle):
     def __init__(self, side1):
-        super().__init__( side1, side2=0)
+        super().__init__(side1, side2=0)
         self.name = "square"
 
     @property
@@ -12,4 +13,3 @@ class Square(Rectangle):
     @property
     def area(self):
         return self.side1 ** 2
-

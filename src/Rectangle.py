@@ -1,5 +1,6 @@
 from src.Figure import Figure
 
+
 class Rectangle(Figure):
     def __init__(self, side1, side2):
         self.side1 = side1
@@ -13,4 +14,3 @@ class Rectangle(Figure):
     @property
     def area(self):
         return self.side1 * self.side2
-
