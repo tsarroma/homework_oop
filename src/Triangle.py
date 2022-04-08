@@ -9,7 +9,7 @@ class Triangle(Figure):
             self.side1 = side1
             self.side2 = side2
             self.side3 = side3
-            self.name = "triange"
+            self.name = "triangle"
         else:
             raise ValueError("Triangle cannot be created")
 
