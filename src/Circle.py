@@ -5,11 +5,11 @@ from src.Figure import Figure
 
 class Circle(Figure):
     def __init__(self, radius):
-        self.radius = radius
-        if radius == 0:
-            return ValueError("fff")
         self.name = "circle"
-
+        if radius > 0:
+            self.radius = radius
+        else:
+            raise ValueError("Radius must be greater than zero")
 
     @property
     def perimeter(self):

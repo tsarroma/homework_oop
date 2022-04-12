@@ -32,6 +32,7 @@ def test_circle_add_area(circle1_fixture, circle2_fixture):
     add_area = circle1_fixture.add_area(circle2_fixture)
     assert round(add_area) == 1571
 
+
 def test_circle_isistance_class_figure(circle1_fixture):
     circle_class = isinstance(circle1_fixture, Figure)
     return circle_class == True

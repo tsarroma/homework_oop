@@ -6,8 +6,6 @@ class Square(Rectangle):
         super().__init__(side1, side2=0)
         self.name = "square"
 
-
-
     @property
     def perimeter(self):
         return self.side1 + self.side1
