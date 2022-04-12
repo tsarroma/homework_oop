@@ -6,7 +6,10 @@ from src.Figure import Figure
 class Circle(Figure):
     def __init__(self, radius):
         self.radius = radius
+        if radius == 0:
+            return ValueError("fff")
         self.name = "circle"
+
 
     @property
     def perimeter(self):
