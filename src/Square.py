@@ -1,10 +1,13 @@
-from src.Rectangle import Rectangle
+from src.Figure import Figure
 
 
-class Square(Rectangle):
+class Square(Figure):
     def __init__(self, side1):
-        super().__init__(side1, side2=0)
         self.name = "square"
+        if side1 > 0:
+            self.side1 = self.side2 = side1
+        else:
+            raise ValueError("Square sides must be greater than 0.")
 
     @property
     def perimeter(self):
