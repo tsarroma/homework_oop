@@ -50,6 +50,6 @@ def test_triangle_exception_in_method_add_area():
     assert "Wrong class passed" == str(excinfo.value)
 
 
-def test_triangle_isistance_class_figure(triangle_fixture):
+def test_triangle_isinstance_class_figure(triangle_fixture):
     triangle_class = isinstance(triangle_fixture, Figure)
     return triangle_class == True
